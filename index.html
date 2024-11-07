@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+    <title>Portfolio Website</title>
+</head>
+<body>
+    <header>
+        <a href="#"></a>
+
+        <nav>
+            <a href="#" class="active" onclick="showContent('home')"> Home</a>
+            <a href="#" onclick="showContent('skills')" >Skills</a>
+            <a href="#" onclick="showContent('education')">Education</a>
+            <a href="#" onclick="showContent('experience')">Experience</a>
+            <a href="#" data-bs-toggle="modal" data-bs-target="#hireMeModal">Contact</a>
+        </nav>
+  
+    </header>
+    <section class="home">
+        <div class="home-img">
+            <img src="main.jpg" alt="">
+        </div>
+        <div class="home-content content-section" id="home">
+            <h1>Hi, It's <span>Anant Singhal</span></h1>
+            <h3 class="typing-text">I'm a <span></span></h3>
+            <p>A B.Tech student in Chemical Engineering at IIT Roorkee, passionate about software development and problem-solving. Skilled in competitive programming with a 1143 Codeforces rating and completion of LeetCode's 50 Days Challenge, I also support career initiatives at IIT Roorkee’s Placement Cell. Let’s connect!</p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/-anant-singhal/" target="_blank">
+                    <img src="linkedin.png" alt="GitHub" style="width: 40px; height: 40px;" class="social-icon"/>
+                </a>
+                <a href="https://leetcode.com/u/anant_singhal/" target="_blank">
+                    <img src="leetcode.png" alt="GitHub" style="width: 40px; height: 40px;" class="social-icon"/>
+                </a>
+                <a href="https://codeforces.com/profile/anant_singhal" target="_blank">
+                    <img src="codeforces.png" alt="GitHub" style="width: 40px; height: 40px;" class="social-icon"/>
+                </a>
+                
+            </div>
+
+            <!-- Hire me code -->
+            <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#hireMeModal">Hire Me</a>
+        </div>
+        <div class="home-content content-section" id="skills" style="display:none;">
+            <div class="skills-container">
+                <!-- Skill 1 -->
+                <div class="skills-item">
+                    <div class="skills-content">
+                        <h3>Programming Languages</h3>
+                        <p>Python, C, C++</p>
+                    </div>
+                </div>
+        
+                <!-- Skill 2 -->
+                <div class="skills-item">
+                    <div class="skills-content">
+                        <h3>Software Development</h3>
+                        <p>Object-Oriented Programming (OOP), Data Structures and Algorithms, Competitive Programming, Software Development Life Cycle (SDLC)</p>
+                    </div>
+                </div>
+        
+                <!-- Skill 3 -->
+                <div class="skills-item">
+                    <div class="skills-content">
+                        <h3>Frameworks and Tools</h3>
+                        <p>HTML, CSS, Bootstrap, Microsoft Excel, Microsoft Word</p>
+                    </div>
+                </div>
+        
+                <!-- Skill 4 -->
+                <div class="skills-item">
+                    <div class="skills-content">
+                        <h3>Version Control & Environments</h3>
+                        <p>Git, Visual Studio Code</p>
+                    </div>
+                </div>
+        
+                <!-- Skill 5 -->
+                <div class="skills-item">
+                    <div class="skills-content">
+                        <h3>Soft Skills</h3>
+                        <p>Effective Communication, Leadership, Mentoring, Team Collaboration</p>
+                    </div>
+                </div>
+        
+                <!-- Skill 6 -->
+                <div class="skills-item">
+                    <div class="skills-content">
+                        <h3>Languages</h3>
+                        <p>English, Hindi</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="home-content content-section" id="education" style="display:none;">
+                <div class="timeline-container">
+                    <!-- Progress Line -->
+                    <!-- <div class="timeline-line"></div> -->
+                
+                    <!-- Education Timeline Item -->
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3>Bachelor of Technology (Chemical Engineering), IIT Roorkee</h3>
+                            <p>CGPA: 8.84 </p>
+                            <div class="duration">Expected Graduation: 2027</div>
+                        </div>
+                    </div>
+                
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3>Class XII, CBSE Board</h3>
+                            <p>94.20%</p>
+                            <div class="duration">Year of Passing: 2023</div>
+                        </div>
+                    </div>
+                
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3>Class X, CBSE Board</h3>
+                            <p>95.40%</p>
+                            <div class="duration">Year of Passing: 2021</div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <div class="home-content content-section" id="experience" style="display:none;">
+            <div class="experience-container">
+                <!-- Experience 1: Undergraduate Teaching Assistant -->
+                <div class="experience-item">
+                    <div class="experience-content">
+                        <h3>Undergraduate Teaching Assistant</h3>
+                        <p>Academic Reinforcement Program, IIT Roorkee (October 2024 - Present)</p>
+                        <ul>
+                            <li>Assisted over 60 undergraduate students by implementing customized teaching methods, resulting in noticeable improvements in their class performance.</li>
+                            <li>Provided hands-on support during laboratory experiments, facilitating practical skills development.</li>
+                            <li>Led engaging discussion sessions aimed at clarifying key concepts and encouraging active participation from students.</li>
+                        </ul>
+                    </div>
+                </div>
+        
+                <!-- Experience 2: Associate Coordinator -->
+                <div class="experience-item">
+                    <div class="experience-content">
+                        <h3>Associate Coordinator</h3>
+                        <p>Placement and Internship Cell, IIT Roorkee (June 2024 - Present)</p>
+                        <ul>
+                            <li>Coordinated placement initiatives for over 2,000 students, enhancing career readiness and increasing employment opportunities.</li>
+                            <li>Orchestrated recruitment drives and skill-building workshops, establishing strong connections with industry representatives.</li>
+                            <li>Analyzed placement data to optimize strategies, providing actionable insights for future improvements.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+
+    </section>
+
+<!-- Modal Structure -->
+<div class="modal fade" id="hireMeModal" tabindex="-1" aria-labelledby="hireMeModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="hireMeModalLabel">Contact Me</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <p>I'm excited to collaborate! Please feel free to drop a message, and I'll get back to you as soon as possible.</p>
+            <form action="mailto:anantsinghal0124@gmail.com" method="post" enctype="text/plain">
+            <div class="mb-3">
+                <label for="name" class="form-label">Your Name</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Your Email</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Your Message</label>
+                <textarea class="form-control" id="message" name="message" rows="3" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+        </div>
+    </div>
+    </div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
